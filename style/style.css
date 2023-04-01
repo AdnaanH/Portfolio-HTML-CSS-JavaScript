@@ -1,0 +1,110 @@
+*{
+    font-family: 'Bitter', serif;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 3em 5em;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+header h1 span{
+    font-size: 1em;
+    font-weight: 400;
+    color: #101f08;
+}
+header button{
+    width: 9em;
+    height: 2.2em;
+    background-color: rgb(63, 250, 119);
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-width: 0;
+    border-radius: 0.75em;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: rgb(8, 88, 51);
+}
+header h2{
+    font-size: 1.7em;
+    font-weight: 700;
+    cursor: pointer;
+}
+main{
+    margin: 5em 0;
+    display: flex;
+    align-items: center;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+aside i{
+    font-size: 1.3em;
+    color: #01270a;
+    cursor: pointer;
+}
+aside i a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bx{
+    cursor: pointer;
+}
+section{
+    position: absolute;
+    padding: 15em 0em 15em 15em;
+}
+section p{
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+footer{
+    display: grid;
+    position: relative;
+}
+.icon-nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 0 15em;
+    cursor: pointer;
+}
+.icon-nav img{
+    width: 3em;
+    cursor: pointer;
+}
+#email{
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#email a{
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(2, 32, 7);
+    font-weight: 700;
+}
