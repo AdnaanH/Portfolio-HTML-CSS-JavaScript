@@ -1,110 +1,153 @@
+:root{
+    --Background-Color: yellow;
+    --Color-One: #000;
+    --Color-Two: #fff;
+    --Color-Three: #076e18;
+    --Color-Four: #3ae7f0;
+    --Font-One: 'Bitter', serif;
+    --Font-Two: 'Commissioner', sans-serif;
+    --Font-Three: 'Poppins', sans-serif;
+}
 *{
-    font-family: 'Bitter', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.section_p{
+    padding: 25px 100px;
+}
+.section_m{
+    margin: 50px 75px;
 }
 body{
-    height: 100vh;
-    margin: 0;
-    padding: 3em 5em;
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
+    background-image: url(/images/background_image.png);
+    background-color: var(--Background-Color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header h1 a{
-    font-size: 1em;
+header h3,
+header h3 a{
+    font-family: var(--Font-Three);
     font-weight: 700;
-    color: black;
+    font-size: 1.4em;
     text-decoration: none;
+    color: var(--Color-Three);
     cursor: pointer;
 }
-header h1 span{
-    font-size: 1em;
-    font-weight: 400;
-    color: #101f08;
+header h3,
+header h3 a:hover{
+    color: var(--Color-Two);
+
+}
+header h3 a span:hover{
+    color: var(--Color-Three);
+}
+header h3 a span{
+    color: var(--Color-Two);
 }
 header button{
-    width: 9em;
-    height: 2.2em;
-    background-color: rgb(63, 250, 119);
-    color: #fff;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 6px;
     font-size: 1.3em;
-    font-weight: 900;
     text-transform: uppercase;
-    border-width: 0;
-    border-radius: 0.75em;
+    font-family: var(--Font-Two);
+    font-weight: 500;
     cursor: pointer;
+    width: 10em;
+    height: 50px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 header button:hover{
-    background-color: rgb(8, 88, 51);
-}
-header h2{
-    font-size: 1.7em;
-    font-weight: 700;
-    cursor: pointer;
+    border: 3px solid var(--Color-Two);
+    color: var(--Color-Two);
 }
 main{
-    margin: 5em 0;
+    min-height: 60vh;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
-aside{
+.main-navigation{
     display: flex;
     flex-direction: column;
-    gap: 1.3em;
+    gap: .5em;
 }
-aside i{
-    font-size: 1.3em;
-    color: #01270a;
+.secondary-navigation{
+    display: flex;
+}
+.main-navigation i{
+    padding: 7px;
+    font-size: 1.5em;
+    color: var(--Color-Three);
     cursor: pointer;
 }
-aside i a{
-    color: black;
-    text-transform: uppercase;
+.main-navigation i:hover{
+    color: var(--Color-One);
+}
+.main-navigation i a{
+    padding-left: 8px;
+    font-family: var(--Font-Three);
     font-weight: 700;
-    font-size: 1.1em;
     text-decoration: none;
-    cursor: pointer;
+    color: var(--Color-One);
+    text-transform: uppercase;
 }
-.bx{
-    cursor: pointer;
+.main-navigation i a:hover{
+    color: var(--Color-One);
+}
+aside{
+    width: 16%;
 }
 section{
-    position: absolute;
-    padding: 15em 0em 15em 15em;
+    padding-top: 2em;
+    width: 90%;
 }
 section p{
-    font-size: 4em;
+    font-family: var(--Font-One);
+    font-weight: 600;
+    font-size: 3.7em;
     text-align: center;
-    cursor: pointer;
+}
+section p span{
+    color: var(--Color-Three);
+}
+section p:hover{
+    color: var(--Color-Two);
 }
 footer{
-    display: grid;
-    position: relative;
-}
-.icon-nav{
     display: flex;
-    justify-content: space-around;
-    padding: 0 0 0 15em;
-    cursor: pointer;
-}
-.icon-nav img{
-    width: 3em;
-    cursor: pointer;
-}
-#email{
-    margin-top: 2.5em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#email a{
-    font-size: 1.3em;
-    text-decoration: none;
+    flex-direction: column;
+    gap: 2em;
     text-align: center;
-    color: rgb(2, 32, 7);
+    text-decoration: none;
+}
+.icon_slider{
+    max-width: 200px;
+    position: relative;
+    margin: auto;
+}
+.slide{
+    display: none;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+footer a{
+    text-decoration: none;
+    color: var(--Color-One);
+    font-family: var(--Font-One);
     font-weight: 700;
 }
