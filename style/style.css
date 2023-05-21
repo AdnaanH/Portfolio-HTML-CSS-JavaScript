@@ -80,9 +80,6 @@ main{
     flex-direction: column;
     gap: .5em;
 }
-.secondary-navigation{
-    display: flex;
-}
 .main-navigation i{
     padding: 7px;
     font-size: 1.5em;
@@ -151,3 +148,4 @@ footer a{
     font-family: var(--Font-One);
     font-weight: 700;
 }
+/* PORTFOLIO PAGE STYLING */
