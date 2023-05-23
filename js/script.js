@@ -13,12 +13,13 @@ function showSlides() {
   setTimeout(showSlides, 1000); 
 };
 
+/*RESUME BUTTON FUNCTIONALITY*/
+document.getElementById("main_btn").addEventListener("click", function() {
+  document.getElementById("resume").style.display = "flex";
+}, false);
 
-var mainButton = document.querySelector("#main_btn");
-var resumePreview = document.getElementByClassName("resume");
+document.getElementById("close").addEventListener("click", function() {
+  document.getElementById("resume").style.display = "none";
+}, false);
 
-mainButton.addEventListener("click", showResume);
 
-function showResume(){
-  alert("This is my resume");
-}
