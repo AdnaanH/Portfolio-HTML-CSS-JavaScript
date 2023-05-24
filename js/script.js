@@ -22,4 +22,19 @@ document.getElementById("close").addEventListener("click", function() {
   document.getElementById("resume").style.display = "none";
 }, false);
 
+/* PHONE MENU FUNCTIONALITY */
+document.getElementById("menu_icon").addEventListener("click", function() {
+  document.getElementById("main-navigation").style.display = "flex";
+  document.getElementById("menu_icon").style.display = "none";
+  document.getElementById("close_p_m").style.display = "grid";
+}, false);
+
+document.getElementById("close_p_m").addEventListener("click", function() {
+  document.getElementById("main-navigation").style.display = "none";
+  document.getElementById("menu_icon").style.display = "grid";
+  document.getElementById("close_p_m").style.display = "none";
+}, false);
+
+
+
 
